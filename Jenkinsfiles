@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('CICD'){
       steps{
-         sh 'pip install --no-cache-dir --upgrade boman-cli'
+         sh 'pip install -i https://test.pypi.org/simple/ boman-cli-uat==0.22'
          sh '~/.local/bin/boman-cli -a run -cicd jenkins'
       }
     }
