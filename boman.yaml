@@ -9,5 +9,5 @@ Auth:
 # SAST:
 #   language: semgrep
 SCA:
-  language: java-snyk-sca
+  language: java
 # Secret_Scan: true
